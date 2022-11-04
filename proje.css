@@ -1,0 +1,167 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body
+{   
+    height: 100vh;
+    width: auto;
+    background-color: rgb(249,249,249);
+
+    background-image: url(/rocket-project/img/rocket.png);
+    background-repeat: no-repeat;
+}
+.navbar
+{
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    
+}   
+.nav2
+{   
+    
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    padding: 10px;
+    justify-content: space-between;
+} 
+
+.navbar .nav2 ul
+{
+    display: inline-block;
+    ;
+    width: 800px;
+    display: flex;
+}
+
+
+.navbar ul li 
+{
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 20px 100px;
+   
+  
+    
+    
+  
+}
+.entery
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,min-max(250px,1fr));
+}
+
+.navbar ul li a
+{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(121, 75, 75);
+    display: inline-block;
+    transition: all 1s 0.5s ease-in-out;
+    
+   
+}
+.navbar ul li a:hover
+{   
+    font-weight: 900;
+    text-decoration: underline;
+    background-color: #fff;
+    color: #333;
+}
+.title h2
+{
+    font-size: 4rem;
+    font-weight: 600;
+    position: relative;
+    top: 250px;
+    left:100px;
+}
+.moon
+{
+    width: 50%;
+    display: flex;
+    margin-left: auto;
+    
+}
+.btn
+{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 420px;
+    left: 550px;
+    font-size: 20px;
+    background: #ff6568;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.scroll
+{
+    position: relative;
+    left: 45%;
+    top: 10px;
+    font-size: 21px;
+    color: black;
+
+}
+
+
+@media (max-width:600px)
+{
+    body
+    {
+        background: none;
+        margin-left: -30px;
+        height: 100vh;
+    }
+    .navbar ul li
+    {
+        display: none;
+    }
+    .logo
+    {
+        
+        margin-left: 10px;
+        padding: 10px;
+    }
+    .btn
+    {
+        position: absolute;
+        left: 70px;
+        top: 150px;
+        width: 130px;
+        height: 30px;
+        font-size: 13px;
+
+    }
+    .title h2
+    {
+        position: relative;
+        left: 60px;
+        top: -20px;
+        margin-top: 40px;
+        font-size: 1rem;
+    }
+    .img
+    {  
+        position: absolute;
+        margin-top: 100px;
+        width: 170%;
+        margin-left: -260px;
+
+    }
+    .scroll
+    {
+        position: absolute;
+        margin-top: 420px;
+        margin-left: -80px;
+    }
+}
